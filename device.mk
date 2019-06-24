@@ -397,6 +397,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
+# ThermalController app
+PRODUCT_PACKAGES += \
+    ThermalController
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
