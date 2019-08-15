@@ -167,11 +167,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	video.disable.ubwc=1 \
 	vendor.video.disable.ubwc=1
 
-# NFC
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.nfc.port=I2C \
-	ro.hardware.nfc_nci=nqx.default
-
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.use_data_netmgrd=true \
@@ -254,4 +249,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.debug.wfd.enable=1 \
 	persist.sys.wfd.virtual=0
-
