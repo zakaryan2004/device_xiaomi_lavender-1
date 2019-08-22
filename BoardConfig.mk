@@ -237,7 +237,7 @@ TARGET_RIL_VARIANT := caf
 TARGET_USES_OLD_MNC_FORMAT := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2018-06-05
+VENDOR_SECURITY_PATCH := 2019-08-05
 
 # Seccomp
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
@@ -254,7 +254,6 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 BOARD_VNDK_VERSION := current
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # TWRP Support
 ifeq ($(WITH_TWRP),true)
@@ -292,6 +291,7 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
 # inherit from the proprietary version
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk

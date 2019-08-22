@@ -75,14 +75,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>android.hardware.nfc</name>
-        <version>1.0</version>
-        <interface>
-            <name>INfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>android.hardware.radio.deprecated</name>
         <version>1.0</version>
         <interface>
@@ -166,14 +158,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <interface>
             <name>IApiService</name>
             <instance>cnd</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.nxp.hardware.nfc</name>
-        <version>1.0</version>
-        <interface>
-            <name>INqNfc</name>
-            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
