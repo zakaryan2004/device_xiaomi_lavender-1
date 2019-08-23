@@ -29,17 +29,16 @@ CUSTOM_BUILD_TYPE := OFFICIAL
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 PRODUCT_NAME := aosp_lavender
-PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
+PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+BUILD_FINGERPRINT := "xiaomi/lavender/lavender:9/PKQ1.180904.001/V10.3.6.0.PFGMIXM:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+	PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.6.0.PFGMIXM release-keys" \
     TARGET_DEVICE="lavender" \
-    PRODUCT_NAME="lavender" \
-    BUILD_FINGERPRINT="xiaomi/lavender/lavender:9/PKQ1.180904.001/V10.3.5.0.PFGEUXM:user/release-keys" \
-    PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.5.0.PFGEUXM release-keys"
-
-TARGET_VENDOR := Xiaomi
+    PRODUCT_NAME="lavender"    
+	
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
